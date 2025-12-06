@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import WrappedDashboard from "./components/WrappedDashboard";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   const [analysisData, setAnalysisData] = useState(null);
@@ -26,6 +27,7 @@ function App() {
       ) : (
         <WrappedDashboard data={analysisData} onReset={handleReset} />
       )}
+      <Analytics />
     </div>
   );
 }
