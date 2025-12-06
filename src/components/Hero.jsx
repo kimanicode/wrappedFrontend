@@ -4,7 +4,7 @@ import { useDropzone } from "react-dropzone";
 import { motion } from "framer-motion";
 
 // Replace this with your actual backend URL
-const API_URL = "http://localhost:8000/upload-and-wrap/";
+const API_URL = "https://api-wrapped.onrender.com/upload-and-wrap";
 
 const Hero = ({ onAnalysisComplete }) => {
   const [file, setFile] = useState(null);
